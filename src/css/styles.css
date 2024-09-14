@@ -6,3 +6,78 @@
 */
 /* Common styles */
 @import url('./reset.css');
+
+.timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+button[data-start] {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#datetime-picker {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.iziToast-error {
+  background-color: #ff3860;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.value {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .value {
+    font-size: 36px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+}
